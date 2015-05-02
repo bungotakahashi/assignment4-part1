@@ -3,7 +3,7 @@
   <head>
     <meta charset= "UTF-8">
     <title>multtable.php</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hw4.css">
   </head>
   <body>
   
@@ -98,7 +98,7 @@
       $col = $max_multiplier - $min_multiplier + 2;
       
       
-      echo "<table  border=\"5\" cellpadding=\"7\">";
+      echo "<table>";
      
       for($i=0; $i<$row; $i++){
         echo "<tr>";
