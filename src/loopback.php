@@ -6,7 +6,9 @@
     </head>
   <body>
     <?php
-      if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+      error_reporting(E_ALL);
+      ini_set('display_errors', 1);
+      if ($_SERVER['REQUEST_METHOD'] === 'GET1') {
         echo "{\"Type\": \"GET\",\"parameters\": ";
         $data = array();
         $data = $_GET;
