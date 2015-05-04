@@ -1,3 +1,18 @@
+Start: Sun, 2 May 2015 21:00:00 -0700 
+End: Sat, 2 May 2015 22:15:00 -0700 
+Tasks: Finished the login program. 
+
+
+Start: Sat, 2 May 2015 13:15:00 -0700 
+End: Sat, 2 May 2015 23:40:00 -0700 
+Tasks: Still working on the login program. Content1 and Content2 are interacting with each other somewhat. Need more improvement.  
+
+
+Start: Fri, 1 May 2015 16:30:00 -0700 
+End: Sat, 2 May 2015 00:10:00 -0700 
+Tasks: I finished loopback.php and working on the login program.
+
+
 Start: Thu, 30 Apr 2015 21:30:00 -0700 
 End: Fri, 1 May 2015 00:37:00 -0700 
 Tasks: I finished multtable.php.

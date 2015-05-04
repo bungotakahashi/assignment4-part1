@@ -8,6 +8,8 @@
   <body>
   
   <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
     
     $min_multiplicand = ($_GET["min-multiplicand"]);
     $max_multiplicand = ($_GET["max-multiplicand"]);

@@ -1,6 +1,6 @@
 <?PHP
 header('Cache-Control: no-cache, no-store, must-revalidate');
-$filePath = explode('/', $_SERVER['PHP_SELF'], -1);
+$filePath = explode('/', $_SERVER['PHP_SELF'], -1);		// filepath code is from the lecture code.
 $filePath = implode('/',$filePath);
 $redirect = "http://" . $_SERVER['HTTP_HOST'] . $filePath;
 session_start();
@@ -16,7 +16,6 @@ echo '<!DOCTYPE html>
     <title>content2.php</title>
   </head>';
 $link="<a href=$redirect/content1.php?ok>here</a>";
-echo "yo $_SESSION[name] <br>";
 echo "You can click $link to go back to content1.";
 
 

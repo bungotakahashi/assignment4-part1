@@ -3,7 +3,7 @@ header('Cache-Control: no-cache, no-store, must-revalidate');
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$filePath = explode('/', $_SERVER['PHP_SELF'], -1);
+$filePath = explode('/', $_SERVER['PHP_SELF'], -1); // this filepath technique is from the lecture code.
 $filePath = implode('/',$filePath);
 $redirect = "http://" . $_SERVER['HTTP_HOST'] . $filePath;
 session_start();
@@ -12,7 +12,7 @@ if (!$_POST && !isset($_SESSION['correct'])){
     header("Location: {$redirect}/login.php", true);
   }
 
-if(isset($_GET['logout']) && $_GET['logout'] == '1'){  
+if(isset($_GET['logout']) && $_GET['logout'] == '1'){  // this destroy code is also from the lecture code.
   $_SESSION = array();
   session_destroy();  
   header("Location: {$redirect}/login.php", true);

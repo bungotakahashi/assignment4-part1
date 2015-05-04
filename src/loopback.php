@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset= "UTF-8">
-    <title>loopback.php</title>
-    </head>
-  <body>
-    <?php
+<?php
       error_reporting(E_ALL);
       ini_set('display_errors', 1);
-      if ($_SERVER['REQUEST_METHOD'] === 'GET1') {
+      header('Content-Type: application/json');
+      if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         echo "{\"Type\": \"GET\",\"parameters\": ";
         $data = array();
         $data = $_GET;
@@ -43,6 +37,5 @@
       else {
         echo "invalid request. (must be GET or POST)";
       }
-    ?>
-  </body>
-</html>
+    
+?>
