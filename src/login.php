@@ -6,13 +6,12 @@ echo '<!DOCTYPE html>
     <title>login.php</title>
     </head>
   <body>';
-    echo  '<form action= "http://web.engr.oregonstate.edu/~takahasb/content1.php" method= "POST">
+    echo  '<form action= "http://web.engr.oregonstate.edu/~takahasb/content1.php?ok" method= "POST">
           username:<input type= "text" name="username">
           <input type= "submit" value="Login">
           </form>';
     
-      error_reporting(E_ALL);
-      ini_set('display_errors', 1);
+      
       
     
   echo '</body>
